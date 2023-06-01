@@ -27,7 +27,9 @@ function App() {
       <h2 style={{fontSize: "2rem", textAlign: "center"}}>Lose Win</h2>
       <HangmanDrawing />
       <HangmanWord />
-      <Keyboard />     
+      <div style={{alignSelf: "stretch"}}>
+        <Keyboard />     
+      </div>
     </section>
   )
 }
