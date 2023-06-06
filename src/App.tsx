@@ -1,3 +1,4 @@
+import  "./index.css"
 import { useCallback, useEffect, useState } from "react"
 
 import words from "./wordList.json"
@@ -6,6 +7,8 @@ import { HangmanDrawing, HangmanWord, Keyboard } from "./components"
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
 }
+
+const board = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ffondo-pizarra&psig=AOvVaw1m932pGxg1GRz3LTt4Eluq&ust=1686169571404000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNDWwqW9r_8CFQAAAAAdAAAAABAE"
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(getWord)
@@ -72,6 +75,7 @@ function App() {
         margin: "0 auto",
         alignItems: "center",
       }}
+      className="board-img"
     >
       <div style={{ fontSize: "2rem", textAlign: "center" }}>
         {isWinner && "Winner! - Refresh to try again"}
@@ -83,7 +87,7 @@ function App() {
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}
       />
-      <div style={{ alignSelf: "stretch" }}>
+      <div style={{ alignSelf: "stretch", padding:"3rem" }}>
         <Keyboard
           disabled={isWinner || isLoser}
           activeLetters={guessedLetters.filter(letter =>
