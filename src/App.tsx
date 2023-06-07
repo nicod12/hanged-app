@@ -8,11 +8,10 @@ function getWord() {
   return words[Math.floor(Math.random() * words.length)]
 }
 
-const board = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ffondo-pizarra&psig=AOvVaw1m932pGxg1GRz3LTt4Eluq&ust=1686169571404000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNDWwqW9r_8CFQAAAAAdAAAAABAE"
 
 function App() {
-  const [wordToGuess, setWordToGuess] = useState(getWord)
-  const [guessedLetters, setGuessedLetters] = useState<string[]>([])
+  const [wordToGuess, setWordToGuess] = useState(getWord);
+  const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
   const incorrectLetters = guessedLetters.filter(
     letter => !wordToGuess.includes(letter)
@@ -66,7 +65,7 @@ function App() {
   }, [])
 
   return (
-    <div
+    <section
       style={{
         maxWidth: "800px",
         display: "flex",
@@ -77,17 +76,17 @@ function App() {
       }}
       className="board-img"
     >
-      <div style={{ fontSize: "2rem", textAlign: "center" }}>
+      <h2 style={{ fontSize: "2rem", textAlign: "center" }}>
         {isWinner && "Winner! - Refresh to try again"}
         {isLoser && "Nice Try - Refresh to try again"}
-      </div>
+      </h2>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
         reveal={isLoser}
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}
       />
-      <div style={{ alignSelf: "stretch", padding:"3rem" }}>
+      <article style={{ alignSelf: "stretch", padding:"3rem" }}>
         <Keyboard
           disabled={isWinner || isLoser}
           activeLetters={guessedLetters.filter(letter =>
@@ -96,8 +95,8 @@ function App() {
           inactiveLetters={incorrectLetters}
           addGuessedLetter={addGuessedLetter}
         />
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 
