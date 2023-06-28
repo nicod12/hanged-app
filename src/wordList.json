@@ -1,23 +1,77 @@
-[
-    "silla",
-    "escritorio",
-    "mesa",
-    "ventana",
-    "puerta",
-    "gato",
-    "perro",
-    "auto",
-    "moto",
-    "bicicleta",
-    "arbol",
-    "agua",
-    "parque",
-    "celular",
-    "internet",
-    "libro",
-    "mate",
-    "zapato",
-    "cesto",
-    "cartel",
-    "semaforo"
-]
+{
+    "item": "Household items",
+    "riddle": [
+      {
+        "name": "Silla",
+        "description": "Tiene patas pero no puede caminar, se usa para sentarse y descansar."
+      },
+      {
+        "name": "Lámpara",
+        "description": "Ilumina las habitaciones, pero no es el sol. Se enciende y se apaga con un interruptor."
+      },
+      {
+        "name": "Cama",
+        "description": "Es suave y cómoda, se usa para dormir y descansar. Tiene colchón, sábanas y almohadas."
+      },
+      {
+        "name": "Mesa",
+        "description": "Tiene cuatro patas y una superficie plana. Se utiliza para comer, estudiar o colocar cosas encima."
+      },
+      {
+        "name": "Televisor",
+        "description": "Me encuentro en la sala y muestro imágenes y sonidos. ¡No me pierdas de vista!"
+      },
+      {
+        "name": "Heladera",
+        "description": "Soy grande y frío, alimento tus comidas. Guardo alimentos frescos y bebidas frías."
+      },
+      {
+        "name": "Espejo",
+        "description": "Reflejo tu imagen, pero no soy de cristal. Me encuentro en el baño y en el tocador."
+      },
+      {
+        "name": "Cortina",
+        "description": "Me cubro las ventanas y permito regular la luz. Soy un adorno y te protejo de las miradas."
+      },
+      {
+        "name": "Cuchara",
+        "description": "No soy tenedor, ni cuchillo tampoco. Me sumerjo en sopas y revuelvo alimentos."
+      },
+      {
+        "name": "Tostadora",
+        "description": "Me pones pan dentro y salgo caliente. Transformo el pan en deliciosas tostadas."
+      },
+      {
+        "name": "Aspiradora",
+        "description": "Voy por el suelo y absorbo la suciedad. Hago ruido, pero dejo tu casa limpia."
+      },
+      {
+        "name": "Ventilador",
+        "description": "Giro mis aspas y refresco el ambiente. En los días calurosos, soy tu aliado."
+      },
+      {
+        "name": "Estufa",
+        "description": "Soy caliente, pero no soy el sol. Cocino tus comidas con fuego y calor."
+      },
+      {
+        "name": "Plancha",
+        "description": "Soy caliente y suelo tener vapor. Aliso las arrugas de la ropa, dejándola impecable."
+      },
+      {
+        "name": "Cepillo",
+        "description": "Me usas para peinar el cabello. Tengo cerdas y te ayudo a lucir arreglado."
+      },
+      {
+        "name": "Cafetera",
+        "description": "Soy una máquina que hace café. Me gusta despertarte con su aroma delicioso."
+      },
+      {
+        "name": "Toalla",
+        "description": "Después de ducharte, me usas para secarte. Soy suave y absorbente."
+      },
+      {
+        "name": "Cesto",
+        "description": "Recibo tus desechos y los guardo. Me encuentras en la cocina o el baño."
+      }
+    ]
+  }

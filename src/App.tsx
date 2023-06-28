@@ -4,10 +4,24 @@ import { useCallback, useEffect, useState } from "react"
 import words from "./wordList.json"
 import { HangmanDrawing, HangmanWord, Keyboard } from "./components"
 
-function getWord() {
-  return words[Math.floor(Math.random() * words.length)]
-}
+type Riddle = {
+  name: string;
+  description: string;
+};
 
+type ObjectHome = {
+  item: string;  
+  riddle: Riddle[];
+};
+
+const objectHome: ObjectHome = words;
+
+function getWord() {
+  const words = objectHome.riddle.map(item =>
+    item.name.toLowerCase()
+  );
+  return words[Math.floor(Math.random() * words.length)];
+}
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(getWord);
@@ -64,6 +78,11 @@ function App() {
     }
   }, [])
 
+  const adivinanzaActual = objectHome.riddle.find(
+    item => item.name.toLowerCase() === wordToGuess
+  );
+
+
   return (
     <section
       style={{
@@ -77,10 +96,13 @@ function App() {
       className="board-img"
     >
       <h2 style={{ fontSize: "2rem", textAlign: "center" }}>
-        {isWinner && "Winner! - Refresh to try again"}
-        {isLoser && "Nice Try - Refresh to try again"}
+        {isWinner && "Ganaste! - Preciona tecla enter para seguir jugando!"}
+        {isLoser && "Perdiste! - Preciona tecla enter y vuelve a intentarlo!"}
       </h2>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
+      <h3 style={{ fontSize: "1.5rem", textAlign: "center" }}>
+        {adivinanzaActual?.description}
+      </h3>
       <HangmanWord
         reveal={isLoser}
         guessedLetters={guessedLetters}
