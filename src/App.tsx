@@ -10,7 +10,7 @@ type Riddle = {
 };
 
 type ObjectHome = {
-  item: string;  
+  item: string;
   riddle: Riddle[];
 };
 
@@ -84,17 +84,7 @@ function App() {
 
 
   return (
-    <section
-      style={{
-        maxWidth: "800px",
-        display: "flex",
-        flexDirection: "column",
-        gap: "2rem",
-        margin: "0 auto",
-        alignItems: "center",
-      }}
-      className="board-img"
-    >
+    <section className="container">
       <h2 style={{ fontSize: "2rem", textAlign: "center" }}>
         {isWinner && "Ganaste! - Preciona tecla enter para seguir jugando!"}
         {isLoser && "Perdiste! - Preciona tecla enter y vuelve a intentarlo!"}

@@ -19,3 +19,13 @@
   background-image: url("https://fondosmil.com/fondo/27529.jpg");
   background-size: cover;
 }
+
+.container {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    gap: 2ren;
+    margin: 0 auto;
+    align-items: center;
+}
+

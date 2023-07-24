@@ -8,8 +8,7 @@ const HEAD = (
       position: "absolute",
       top: "50px",
       right: "-30px",
-      opacity:"40%"
-   }}   
+   }}
   />
 )
 
@@ -22,8 +21,7 @@ const BODY = (
       position: "absolute",
       top: "120px",
       right: 0,
-      opacity:"40%"
-   }}   
+   }}
   />
 )
 
@@ -33,13 +31,12 @@ const RIGHT_ARM = (
       width: "100px",
       height: "10px",
       background: "white",
-      opacity:"40%",
       position: "absolute",
       top: "150px",
       right: "-100px",
       rotate: "-30deg",
       transformOrigin: "left bottom"
-   }}   
+   }}
   />
 )
 
@@ -49,13 +46,12 @@ const LEFT_ARM = (
       width: "100px",
       height: "10px",
       background: "white",
-      opacity:"40%",
       position: "absolute",
       top: "150px",
       right: "10px",
       rotate: "30deg",
       transformOrigin: "right bottom"
-   }}   
+   }}
   />
 )
 
@@ -65,13 +61,12 @@ const RIGHT_LEG = (
       width: "100px",
       height: "10px",
       background: "white",
-      opacity:"40%",
       position: "absolute",
       top: "210px",
       right: "-90px",
       rotate: "60deg",
       transformOrigin: "left bottom"
-   }}   
+   }}
   />
 )
 
@@ -81,13 +76,12 @@ const LEFT_LEG = (
       width: "100px",
       height: "10px",
       background: "white",
-      opacity:"40%",
       position: "absolute",
       top: "210px",
       right: 0,
       rotate: "-60deg",
       transformOrigin: "right bottom"
-   }}   
+   }}
   />
 )
 
@@ -108,7 +102,7 @@ export function HangmanDrawing( { numberOfGuesses }: HangmanDrawingProps) {
             position: "absolute",
             top: 0,
             right: 0,
-         }}   
+         }}
         />
 
         <div
@@ -117,7 +111,7 @@ export function HangmanDrawing( { numberOfGuesses }: HangmanDrawingProps) {
             width: "200px",
             marginLeft: "120px",
             background: "white",
-         }}   
+         }}
         />
 
         <div
@@ -126,7 +120,7 @@ export function HangmanDrawing( { numberOfGuesses }: HangmanDrawingProps) {
             width: "10px",
             background: "white",
             marginLeft: "120px",
-         }}   
+         }}
         />
 
 
